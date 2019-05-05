@@ -9,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * PageObject class for secondSearchResultPage.
+ */
 public class SecondSearchResultPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='g']")
@@ -19,10 +22,18 @@ public class SecondSearchResultPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    /**
+     * Method to count the number of search results on the secondSearchResultPage.
+     * @return count the number of search results on the secondSearchResultPage.
+     */
     public int getSearchResultsCount2() {
         return searchResults2.size();
     }
 
+    /**
+     * Method to check for searchTerm in search results on the secondSearchResultPage.
+     * @return searchResults list.
+     */
     public List<String> getSearchResult(){
         List<String> searchResultsList = new ArrayList<String>();
         for (WebElement searchResult : searchResults2) {
