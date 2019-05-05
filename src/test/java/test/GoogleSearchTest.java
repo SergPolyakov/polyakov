@@ -13,7 +13,7 @@ import java.util.List;
 public class GoogleSearchTest extends BaseTest {
 
     /**
-     * Basic test of the search function with checking the number of search results and the presence of the search text in the results (on the first two pages of the search result).
+     * Basic test of the search function with  checking the number of search results and the presence of the search text in the results (on the first two pages of the search result).
      */
     @Test
     public void googleSearchTest(){
